@@ -1,21 +1,18 @@
-# Nodejs Sample Project
-
-NodeJs 8.4.0, ExpressJs 4.13.0 & MongoDB 3.4.19 based restful backend service.
+# Docker Nodejs App
 
 
 ## Getting Started
 ### To run the project:  
-Make sure MongoDB instance is running on the system.  
 
 1. Clone the project
 
-2. Go to root folder of the project and do:   
-`$ sudo nano .env`  
-and paste`NODE_ENV=development` in the file and save it.
+2. Build the docker image:   
+`$ sudo docker build . -t deepak661/nodejs-web-app`  
 
-3. Then enter the following commands:   
-`$ sudo npm install`  
-`$ sudo nodemon`  
+3. Run a container from the image:   
+`$ sudo docker run -p 45045:8080 -d deepak661/nodejs-web-app`  
+
+3. Test the app:   
+`$ curl -i localhost:45045`  
 
 The app should be up and running. 
-
