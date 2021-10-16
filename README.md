@@ -4,7 +4,8 @@
 ## Getting Started
 ### To run the project:  
 
-1. Clone the project
+1. Clone the project:  
+`$ sudo git clone https://github.com/deepak41/docker-nodejs-app.git`  
 
 2. Go to root folder of project & build the docker image:   
 `$ sudo docker build . -t deepak661/nodejs-web-app`  
