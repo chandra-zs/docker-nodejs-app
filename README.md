@@ -17,3 +17,12 @@
 `$ curl -i localhost:45045`  
 
 The app should be up and running. 
+
+
+### To upload the image to docker hub:  
+
+1. Login into docker hub from terminal:  
+`$ sudo docker login -u "username" -p "password" docker.io`  
+
+2. Upload the image to docker hub:   
+`$ sudo docker push deepak661/nodejs-web-app`  
