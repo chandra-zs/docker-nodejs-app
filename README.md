@@ -6,7 +6,7 @@
 
 1. Clone the project
 
-2. Build the docker image:   
+2. Go to root folder of project & build the docker image:   
 `$ sudo docker build . -t deepak661/nodejs-web-app`  
 
 3. Run a container from the image:   
